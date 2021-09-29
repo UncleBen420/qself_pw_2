@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QSelf 2021 - Labo II</title>
+    <style type="text/css">
+      body {
+        margin:40px auto;
+        max-width:800px;
+        line-height:1.6;
+        font-size:18px;
+        color:#444;
+        padding:0 10px
+      }
+      h1,h2,h3 {
+        line-height:1.2
+      }
+    </style>
+  </head>
+
+  <body alink="#ff0000" bgcolor="#ffffff" link="#0000ef" text="#000000" vlink="#52188c">
+    <blockquote>
+      <center>
+        <hr width="100%">
+      </center>
+      <p></p>
+      <center>
+        <table cols="1" nosave="" bgcolor="#ffffcc" border="2" width="60%">
+          <tbody>
+            <tr nosave="">
+              <td nosave="">
+                <center><b><font size="+3">Motion activity detection with the Movesense</font></b>
+
+                  <p><b><font size="+2">Practical Work II</font></b></p></center></td></tr></tbody></table></center><br>
+      <div align="right"><p>Axel Fahy<br />Andres Perez-Uribe</p></div>
+      <hr width="100%">
+
+      <p><center><img src="res/fitbit_stairs.jpg" title="Stairs" width=500></p></center>
+        <p>In this laboratory you are going to detect motion activities such as walking, running, jumping, resting, etc. using the accelerometer of the Movesense.</p>
+
+        <h2>Steps</h2>
+        <ul>
+          <li>Record all the activities you want to detect multiple times (for example 5 times), with the same duration, for example of 10 secondes.</li>
+          <li>Put each activities in a different folder. For example a
+        folder <i>run</i> containing all the records taken when
+        running, and so on.</li>
+          <li>Load the data by activity.</li>
+          <li>Visualize the data.</li>
+          <li>Find a way to detect the activities. That is, try to
+        identify a feature that characterizes a given activity and
+        allows you to differentiate it from the others. For example,
+        you may compute the standard deviation of the data
+        corresponding to the activities. Don't hesitate to try more complex features if needed.</li>
+        </ul>
+
+        We provide you with a notebook with an example code to load and visualize the data.
+
+        <strong>virtualenv:</strong> Prepare a virtual environment
+        with all the Python tools needed, and listed in the following file:</li>
+        <a href="requirements.txt">requirements.txt</a>
+
+        <pre>
+$ python3 -m venv venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+        </pre>
+
+        <strong>Notebook:</strong> The notebook from this folder contains an example to read the data and the beginning of the practical work, you can start it using:
+
+        <pre>
+$ jupyter lab
+	</pre>
+	<h2>Analysis</h2>
+	<ul>
+	  <li>What characteristics of the MoseSense sensor are important to know
+	  when performing a recording ? What are the "by default"
+	  settings you are using right now ?
+	  <li>How noisy is the data captured by the MoveSense sensor ?
+	  <li>How variable are the recordings you made for a given
+	  activity ? How variable is the feature you computed to
+	  characterize a given activity ?
+	  <li>Is it always possible to differentiate various
+	  activities by computing a feature of the corresponding data
+	  ? If not, why not combining multiple features (e.g., median,
+	  range, standard deviation) and defining a rule (or a set of rules) based on them ?
+	  <li>What other features can be computed to characterize a
+	  set of measurements like the ones captured using the
+	  MoveSense during a particular activity ?
+	  <li>For a cyclic activity like walking, can you identify a periodic
+	  pattern in the data ?
+	  <li>Did you observe that the sensor has to be worn in the
+	  same way during an experiment ? (e.g., you cannot turn it
+	  upside down for instance ?) why ? by the way, did you notice
+	  the sensing of the acceleration caused by gravity and how it
+	  perturbs your data ?
+	  </ul>
+  </body>
+</html>
+
+
+
+
